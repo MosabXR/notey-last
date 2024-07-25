@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/560f75c6e9.js" crossorigin="anonymous"></script>
+  <title>Notey</title>
+</head>
+
+<body>
+  <div id="app">
+    <div class="main w-100 min-vh-100 bg-dark text-white position-relative" data-theme="dark">
+      <header class="py-4 border-bottom border-black">
+        <nav>
+          <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="text-uppercase m-0">Notey</h1>
+            <div class="nav-menu">
+              <button class="btn btn-light" id="toggle-theme-btn">
+                <i class="fa-solid fa-moon"></i>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="pt-4 pb-5">
+        <div class="container">
+          <div class="options d-flex flex-wrap flex-sm-nowrap gap-2">
+            <button class="btn btn-primary flex-grow-1" id="create-note-btn">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <button class="btn btn-success flex-grow-1" id="search-note-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button class="btn btn-danger flex-grow-1" id="toggle-favorite-notes-btn" data-status="inactive">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <button class="btn btn-secondary" id="delete-all-notes-btn">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+            <input type="text" class="form-control" id="search-note-field" placeholder="Search for note...">
+          </div>
+          <div class="row g-2 pt-2 pb-5">
+
+          </div>
+        </div>
+        <div class="overlay black-overlay position-fixed fixed-top w-100 vh-100 z-1 d-none" data-operation="add">
+          <div class="container h-100 d-flex flex-wrap align-content-center gap-2 p-4 p-md-5">
+
+          </div>
+        </div>
+      </main>
+      <footer class="border-top border-black bg-dark text-white py-3 position-absolute fixed-bottom z-0">
+        <div class="container d-flex justify-content-between align-items-center">
+          <p class="m-0 text-uppercase">By <span><a class="text-decoration-none text-info" target="_blank"
+                class="text-decoration-none" href="https://facebook.com/mosab.elkalyouby888">@Mosab
+                Elkalyouby</a></span></p>
+
+          <div class="socials">
+            <a class="text-decoration-none" target="_blank" href="https://facebook.com/mosab.elkalyouby888">
+              <button class="btn btn-primary">
+                <i class="fa-brands fa-facebook"></i>
+              </button>
+            </a>
+            <a class="text-decoration-none" target="_blank"
+              href="https://linkedin.com/in/mosab-elkalyouby/">
+              <button class="btn btn-info text-white">
+                <i class="fa-brands fa-linkedin"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

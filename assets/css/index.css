@@ -1,0 +1,80 @@
+* {
+    transition: background-color 0.25s ease;
+}
+
+h1::after {
+    content: '.';
+    color: tomato;
+}
+
+.note {
+    height: 20rem;
+    transition: transform 0.25s ease;
+}
+
+.note:hover {
+    transform: scale(1.02);
+}
+
+.note p {
+    max-height: 13rem;
+}
+
+.note-marker {
+    width: 0.125rem;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 0.25rem;
+    transform: translateY(-50%);
+    border-radius: 10rem;
+}
+
+.black-overlay {
+    background-color: rgba(0,0,0,0.75);
+}
+
+.large-note {
+    height: 90%;
+}
+
+.large-note p {
+    max-height: 27.5rem;
+}
+
+/* Common  */
+
+.form-control {
+    box-shadow: none !important;
+}
+
+textarea {
+    resize: none;
+    height: 25rem;
+}
+
+.placeholder-primary::placeholder {
+    color: var(--bs-primary);
+}
+
+.placeholder-danger::placeholder {
+    color: var(--bs-danger);
+}
+
+.placeholder-warning::placeholder {
+    color: var(--bs-warning);
+}
+
+.placeholder-success::placeholder {
+    color: var(--bs-success);
+}
+
+/* Utility */
+
+.lh-16 {
+    line-height: 1.6;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
